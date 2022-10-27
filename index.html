@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style type="text/css">
       .number-process-table tr {
         font-size: 14px;
@@ -10,32 +10,28 @@
         padding: 0 5px 5px 5px;
         margin-top: -1px;
       }
-
       .number-process {
         width: 25px;
+		display: block;
       }
-
       table {
         border-collapse: unset;
       }
-
       .number-process div {
         width: 18px;
         height: 18px;
         border-radius: 50%;
         background-color: rgba(149, 149, 224, 1);
         text-align: center;
-        font-size: 11px;
-        color: white;
         position: relative;
+        font-size: 11px;
+        color: #fff;
         line-height: 18px;
         margin-right: 5px;
       }
-
       .white {
         background: unset;
       }
-
       .number-process span {
         height: 200px;
         display: block;
@@ -43,27 +39,28 @@
         position: absolute;
         width: 1.5px;
         left: 8.25px;
+        top: 0;
         z-index: -1;
       }
-
       td {
         vertical-align: top;
       }
-
       h2 {
         font-size: 16px;
       }
-
       .policy-assurance {
         background-color: rgba(244, 244, 251, 0.502);
         width: 300px;
         padding: 10px;
       }
-
+      @media only screen and (max-width: 600px) {
+        .policy-assurance {
+          width: 100%;
+        }
+      }
       .policy-assurance tr {
         font-size: 12px;
       }
-
       .title-small {
         color: rgba(149, 149, 224, 1);
       }
@@ -73,133 +70,112 @@
   <table cellspacing="5" class="policy-assurance">
     <tr>
       <td>
-        <h3 style="text-align: center; font-weight: normal"> Insurance policy </h3>
+        <h3 style="text-align: center; font-weight: 400">Police assurance</h3>
       </td>
     </tr>
     <tr>
-      <td>
-        <b>Accident : </b>Demo Assurances, private division
-      </td>
+      <td><b>Accident :</b> Demo Assurances, division privée</td>
     </tr>
     <tr>
-      <td>
-        <b>Policy n° LAA : </b>0000-1.1
-      </td>
+      <td><b>No police LAA :</b> 0000-1.1</td>
     </tr>
     <tr>
-      <td>
-        <b>Policy n° LAAC : </b>0000-1.2
-      </td>
+      <td><b>No police LAAC :</b> 0000-1.2</td>
     </tr>
   </table>
   <br />
-  <h2>In case of Illness</h2>
+  <h2>En cas de maladie</h2>
   <table cellspacing="0" class="number-process-table">
     <tr>
       <td width="5%" class="number-process">
-        <div>1 <span></span>
-        </div>
+        <div>1<span></span></div>
       </td>
       <td>
-        <b class="title-small">Inform your line </b>manager and Loyco by email or phone on the first day of absence.
+        <b class="title-small">Informer votre responsable</b> dès le premier
+        jour de votre absence
       </td>
     </tr>
     <tr>
       <td width="5%" class="number-process">
-        <div>2 <span></span>
-        </div>
+        <div>2<span></span></div>
       </td>
       <td>
-        <b class="title-small">Send the medical certificate </b>by post to your HR department if your absence lasts 3 days or more.
+        <b class="title-small">Transmettre un certificat médical</b> par
+        courrier aux RH, dans le cas où votre absence égale ou dépasse trois
+        jours
       </td>
     </tr>
     <tr>
       <td width="5%" class="number-process">
-        <div>3 <span></span>
-        </div>
+        <div>3<span></span></div>
       </td>
       <td>
-        <b class="title-small">Send each new medical certificate </b>to your HR by post in case of long-term absence.
+        <b class="title-small">Transmettre chaque nouveau certificat médical</b>
+        par courrier aux RH en cas d''absence prolongée
       </td>
     </tr>
     <tr>
-      <td width="5%" class="number-process">
-        <div>4</div>
-      </td>
+      <td width="5%" class="number-process"><div>4</div></td>
       <td>
-        <b class="title-small">Inform Loyco </b>by e-mail or phone once you are back at work.
+        <b class="title-small">Informer les RH</b> par email ou téléphone lors
+        de votre retour au travail
       </td>
     </tr>
   </table>
   <br />
-  <h2>In case of Accident</h2>
+  <h2>En cas d''accident</h2>
   <table cellspacing="0" class="number-process-table">
     <tr>
       <td width="5%" class="number-process">
-        <div>1 <span></span>
-        </div>
+        <div>1<span></span></div>
       </td>
       <td>
-        <b class="title-small">In case of work incapacity, </b>inform your line manager
+        <b class="title-small">Avertir rapidement votre département</b> et
+        contacter les RH afin de compléter la déclaration
       </td>
     </tr>
     <tr>
       <td width="5%" class="number-process">
-        <div>2 <span></span>
-        </div>
+        <div>2<span></span></div>
       </td>
       <td>
-        <b class="title-small">Ensure you contact Loyco </b>to fulfill an Accident declaration to get a refund from the insurance company
+        <b class="title-small">Transmettre un certificat médical</b> par
+        courrier aux RH, dans le cas où votre accident implique une absence
       </td>
     </tr>
     <tr>
       <td width="5%" class="number-process">
-        <div>3 <span></span>
-        </div>
+        <div>3<span></span></div>
       </td>
       <td>
-        <b class="title-small">Send the medical certificate </b>by post to your HR department on the first day of absence.
+        <b class="title-small">Transmettre chaque nouveau certificat médical</b>
+        par courrier aux RH en cas d''absence prolongée
       </td>
     </tr>
     <tr>
-      <td width="5%" class="number-process">
-        <div>4 <span></span>
-        </div>
-      </td>
+      <td width="5%" class="number-process"><div>4</div></td>
       <td>
-        <b class="title-small">Send each new medical certificate </b>to your HR by post in case of long-term absence.
-      </td>
-    </tr>
-    <tr>
-      <td width="5%" class="number-process">
-        <div>5</div>
-      </td>
-      <td>
-        <b class="title-small">Inform Loyco </b>by e-mail or phone once you are back at work
+        <b class="title-small">Informer les RH</b> par email ou téléphone lors
+        de votre retour au travail.
       </td>
     </tr>
   </table>
   <br />
-  <h2> In case of serious medical condition due to an Accident during a professional trip abroad</h2>
+  <h2>En cas d''accidents lors d''un voyage professionnel à l''étranger</h2>
   <table cellspacing="0" class="number-process-table">
     <tr>
       <td width="5%" class="number-process">
-        <div>1 <span></span>
-        </div>
+        <div>1<span></span></div>
       </td>
       <td>
-        <b class="title-small">Call Demo Emergency Assistance Center 24/7 </b>at +52 58 277 00 00 member reference : 000000001
+        <b class="title-small">Appeler la centrale d''alarme 24/24</b> de la
+        Demo Assurances au +52 58 277 00 00 (numéro d''assistance : 000000001)
       </td>
     </tr>
     <tr>
-      <td width="5%" class="number-process">
-        <div>2</div>
-      </td>
-      <td>
-        <b class="title-small">Inform your HR department</b>
-      </td>
+      <td width="5%" class="number-process"><div>2</div></td>
+      <td><b class="title-small">Avertir votre département RH.</b></td>
     </tr>
   </table>
-  <br />
-  <br />
+  <br /><br />
 </html>
