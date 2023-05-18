@@ -1,181 +1,250 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <style type="text/css">
-      .number-process-table tr {
-        font-size: 14px;
-        overflow: hidden;
-        display: flex;
-        padding: 0 5px 5px 5px;
-        margin-top: -1px;
-      }
-      .number-process {
-        width: 25px;
-		display: block;
-      }
-      table {
-        border-collapse: unset;
-      }
-      .number-process div {
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        background-color: rgba(149, 149, 224, 1);
-        text-align: center;
-        position: relative;
-        font-size: 11px;
-        color: #fff;
-        line-height: 18px;
-        margin-right: 5px;
-      }
-      .white {
-        background: unset;
-      }
-      .number-process span {
-        height: 200px;
-        display: block;
-        background: rgba(149, 149, 224, 1);
-        position: absolute;
-        width: 1.5px;
-        left: 8.25px;
-        top: 0;
-        z-index: -1;
-      }
-      td {
-        vertical-align: top;
-      }
-      h2 {
-        font-size: 16px;
-      }
-      .policy-assurance {
-        background-color: rgba(244, 244, 251, 0.502);
-        width: 300px;
-        padding: 10px;
-      }
-      @media only screen and (max-width: 600px) {
-        .policy-assurance {
-          width: 100%;
-        }
-      }
-      .policy-assurance tr {
-        font-size: 12px;
-      }
-      .title-small {
-        color: rgba(149, 149, 224, 1);
-      }
-    </style>
-  </head>
-  <h2 style="font-size: 16px">DEMCO SA</h2>
-  <table cellspacing="5" class="policy-assurance">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style type="text/css">
+  .number-process-table tr {
+    font-size: 14px;
+    overflow: hidden;
+    display: flex;
+    padding: 0 5px 5px 5px;
+    margin-top: -1px
+  }
+
+  .number-process {
+    width: 25px
+  }
+  
+  .tin-test-process > ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    padding: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+  
+  .tin-test-process .rounded-list li {
+	position: relative;
+    display: flex;
+    padding: .4em .4em .4em 2em;
+	font-size:14px;
+	align-items: center;
+  }
+  
+  .tin-test-process .rounded-list li:before {
+	content: counter(li);
+	counter-increment: li;
+	margin-right: 10px;
+	border-radius:50%;
+	background: rgba(149, 149, 224, 1);
+	padding: 2px 5px;
+	color: #fff;
+	font-size:11px;
+  }
+
+  table {
+    border-collapse: unset
+  }
+
+  .number-process div {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgba(149, 149, 224, 1);
+    text-align: center;
+    position: relative;
+    font-size: 11px;
+    color: #fff;
+    line-height: 18px;
+    margin-right: 5px
+  }
+
+  .white {
+    background: unset
+  }
+
+  .number-process span {
+    height: 200px;
+    display: block;
+    background: rgba(149, 149, 224, 1);
+    position: absolute;
+    width: 1.5px;
+    left: 8.25px;
+    top: 0;
+    z-index: -1
+  }
+
+  .number-process-table,
+  .policy-assurance .number-process-table,
+  .policy-assurance td {
+    vertical-align: top
+  }
+
+  h2 {
+    font-size: 16px
+  }
+
+  .policy-assurance {
+    background-color: rgba(244, 244, 251, .502);
+    width: 300px;
+    padding: 10px
+  }
+
+  @media only screen and (max-width: 600px) {
+    .policy-assurance {
+      width: 100%;
+    }
+  }
+
+  .policy-assurance tr {
+    font-size: 12px
+  }
+
+  .title-small {
+    color: rgba(149, 149, 224, 1)
+  }
+</style>
+<h2 style="font-size:16px">DEMCO SA</h2>
+<table cellspacing="5" class="policy-assurance">
+  <tbody>
     <tr>
       <td>
-        <h3 style="text-align: center; font-weight: 400">Police assurance</h3>
+        <h3 style="text-align:center;font-weight:400">Police assurance</h3>
       </td>
     </tr>
     <tr>
-      <td><b>Accident :</b> Demo Assurances, division privée</td>
+      <td>
+        <b>Accident :</b> Demo Assurances, division privée
+      </td>
     </tr>
     <tr>
-      <td><b>No police LAA :</b> 0000-1.1</td>
+      <td>
+        <b>No police LAA :</b> 0000-1.1
+      </td>
     </tr>
     <tr>
-      <td><b>No police LAAC :</b> 0000-1.2</td>
+      <td>
+        <b>No police LAAC :</b> 0000-1.2
+      </td>
     </tr>
-  </table>
-  <br />
-  <h2>En cas de maladie</h2>
-  <table cellspacing="0" class="number-process-table">
+  </tbody>
+</table>
+<br>
+<h2>En cas de maladie</h2>
+
+<div class="tin-test-process">
+<ol class="rounded-list">
+  <li>
+	<span><b class="title-small">Informer votre responsable</b> dès le premier jour de votre absence</span>
+  </li>
+  <li>
+	<span><b class="title-small">Transmettre un certificat médical</b> par courrier aux RH, dans le cas où votre absence égale ou dépasse trois jours</span>
+  </li>
+  <li>
+	<span><b class="title-small">Transmettre chaque nouveau certificat médical</b> par courrier aux RH en cas bsence prolongée</span>
+  </li>
+</ol>
+</div>
+
+<table cellspacing="0" class="number-process-table">
+  <tbody>
     <tr>
       <td width="5%" class="number-process">
-        <div>1<span></span></div>
+        <div>1 <span></span>
+        </div>
       </td>
       <td>
-        <b class="title-small">Informer votre responsable</b> dès le premier
-        jour de votre absence
+        
       </td>
     </tr>
     <tr>
       <td width="5%" class="number-process">
-        <div>2<span></span></div>
+        <div>2 <span></span>
+        </div>
       </td>
       <td>
-        <b class="title-small">Transmettre un certificat médical</b> par
-        courrier aux RH, dans le cas où votre absence égale ou dépasse trois
-        jours
+        <b class="title-small">Transmettre un certificat médical</b> par courrier aux RH, dans le cas où votre absence égale ou dépasse trois jours
       </td>
     </tr>
     <tr>
       <td width="5%" class="number-process">
-        <div>3<span></span></div>
+        <div>3 <span></span>
+        </div>
       </td>
       <td>
-        <b class="title-small">Transmettre chaque nouveau certificat médical</b>
-        par courrier aux RH en cas d''absence prolongée
-      </td>
-    </tr>
-    <tr>
-      <td width="5%" class="number-process"><div>4</div></td>
-      <td>
-        <b class="title-small">Informer les RH</b> par email ou téléphone lors
-        de votre retour au travail
-      </td>
-    </tr>
-  </table>
-  <br />
-  <h2>En cas d''accident</h2>
-  <table cellspacing="0" class="number-process-table">
-    <tr>
-      <td width="5%" class="number-process">
-        <div>1<span></span></div>
-      </td>
-      <td>
-        <b class="title-small">Avertir rapidement votre département</b> et
-        contacter les RH afin de compléter la déclaration
+        <b class="title-small">Transmettre chaque nouveau certificat médical</b> par courrier aux RH en cas bsence prolongée
       </td>
     </tr>
     <tr>
       <td width="5%" class="number-process">
-        <div>2<span></span></div>
+        <div>4</div>
       </td>
       <td>
-        <b class="title-small">Transmettre un certificat médical</b> par
-        courrier aux RH, dans le cas où votre accident implique une absence
+        <b class="title-small">Informer les RH</b> par email ou téléphone lors de votre retour au travail
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2>En cas ccident</h2>
+<table cellspacing="0" class="number-process-table">
+  <tbody>
+    <tr>
+      <td width="5%" class="number-process">
+        <div>1 <span></span>
+        </div>
+      </td>
+      <td>
+        <b class="title-small">Avertir rapidement votre département</b> et contacter les RH afin de compléter la déclaration
       </td>
     </tr>
     <tr>
       <td width="5%" class="number-process">
-        <div>3<span></span></div>
+        <div>2 <span></span>
+        </div>
       </td>
       <td>
-        <b class="title-small">Transmettre chaque nouveau certificat médical</b>
-        par courrier aux RH en cas d''absence prolongée
+        <b class="title-small">Transmettre un certificat médical</b> par courrier aux RH, dans le cas où votre accident implique une absence
       </td>
     </tr>
     <tr>
-      <td width="5%" class="number-process"><div>4</div></td>
+      <td width="5%" class="number-process">
+        <div>3 <span></span>
+        </div>
+      </td>
       <td>
-        <b class="title-small">Informer les RH</b> par email ou téléphone lors
-        de votre retour au travail.
+        <b class="title-small">Transmettre chaque nouveau certificat médical</b> par courrier aux RH en cas bsence prolongée
       </td>
     </tr>
-  </table>
-  <br />
-  <h2>En cas d''accidents lors d''un voyage professionnel à l''étranger</h2>
-  <table cellspacing="0" class="number-process-table">
+    <tr>
+      <td width="5%" class="number-process">
+        <div>4</div>
+      </td>
+      <td>
+        <b class="title-small">Informer les RH</b> par email ou téléphone lors de votre retour au travail.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2>En cas ccidents lors n voyage professionnel à tranger</h2>
+<table cellspacing="0" class="number-process-table">
+  <tbody>
     <tr>
       <td width="5%" class="number-process">
-        <div>1<span></span></div>
+        <div>1 <span></span>
+        </div>
       </td>
       <td>
-        <b class="title-small">Appeler la centrale d''alarme 24/24</b> de la
-        Demo Assurances au +52 58 277 00 00 (numéro d''assistance : 000000001)
+        <b class="title-small">Appeler la centrale larme 24/24</b> de la Demo Assurances au +52 58 277 00 00 (numéro ssistance : 000000001)
       </td>
     </tr>
     <tr>
-      <td width="5%" class="number-process"><div>2</div></td>
-      <td><b class="title-small">Avertir votre département RH.</b></td>
+      <td width="5%" class="number-process">
+        <div>2</div>
+      </td>
+      <td>
+        <b class="title-small">Avertir votre département RH.</b>
+      </td>
     </tr>
-  </table>
-  <br /><br />
-</html>
+  </tbody>
+</table>
+<br>
+<br>
