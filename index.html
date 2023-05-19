@@ -12,6 +12,10 @@
     width: 25px
   }
   
+  .tin-test-process {
+	margin-bottom: 100px;
+  }
+  
   .tin-test-process > ol {
     counter-reset: li; /* Initiate a counter */
     list-style: none; /* Remove default numbering */
@@ -23,9 +27,10 @@
   .tin-test-process .rounded-list li {
 	position: relative;
     display: flex;
-    padding: .4em .4em .4em 2em;
 	font-size:14px;
-	align-items: center;
+	align-items: flex-start;
+	padding-bottom: 5px;
+	overflow: hidden;
   }
   
   .tin-test-process .rounded-list li:before {
@@ -34,9 +39,24 @@
 	margin-right: 10px;
 	border-radius:50%;
 	background: rgba(149, 149, 224, 1);
-	padding: 2px 5px;
+	min-width: 15px;
+	height: 15px;
+	padding: 2px 2px;
 	color: #fff;
 	font-size:11px;
+	text-align: center;
+  }
+  
+  .tin-test-process .rounded-list li:not(:last-child):after {
+	height: 200px;
+	content: " ";
+	position: absolute;
+	background: rgba(149, 149, 224, 1);
+	width: 2px;
+	left: 8.5px;
+	top: 1rem;
+	z-index: -1;
+	display:block;
   }
 
   table {
@@ -183,6 +203,7 @@
   </tbody>
 </table>
 <br>
+<!--
 <h2>En cas ccident</h2>
 <table cellspacing="0" class="number-process-table">
   <tbody>
@@ -246,5 +267,6 @@
     </tr>
   </tbody>
 </table>
+!-->
 <br>
 <br>
